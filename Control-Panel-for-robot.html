@@ -1,0 +1,88 @@
+<!DOCTPE html>
+<html>
+	<head>
+		<meta charset="utf.8">
+		<title> Robot </title>
+		<link rel="stylesheet" herf="style.css" />
+	</head>
+	<body>
+		
+		<h1> Control Panel</h1>
+		<script>
+		function Right(){
+		alert("Robot moving right");
+		}
+		function Left(){
+		alert("Robot moving Left");
+		}
+		function Front(){
+		alert("Robot moving Forward");
+		}
+		function Back(){
+		alert("Robot moving Backward");
+		}
+		function Stop(){
+		alert("Robot Stopped");
+		}
+		</script>
+		<style>
+		fieldset{background:#ADD8E6;padding:40px}
+		legend{background:#FFF;border:1px solid #CCC;padding:5px}
+		input {width:100px}
+		#Forward
+		{
+		position:fixed;
+		top : 20%;
+		left: 10%;
+		}
+		#STOP
+		{
+		position:fixed;
+		top : 25%;
+		left: 10%;
+		background:red;
+		
+		}
+		#BACK
+		{
+		position:fixed;
+		top : 30%;
+		left: 10%;
+		}
+		#LEFT
+		{
+		position:fixed;
+		top : 25%;
+		left: 2%;
+		}
+		#RIGHT
+		{
+		position:fixed;
+		top : 25%;
+		left: 18%;
+		}
+		
+		</style>
+		<fieldset>
+		<legend> Directions </legend>
+		<br>
+		
+		<input id="Forward" type="button" name="Forward" value="Forward" onclick="Front()">
+		
+		<br>
+		
+		<input id="LEFT" type="button" name="LEFT" value="Left" onclick="Left()">
+		
+	    <input id="STOP" type="button" name="STOP" value="Stop" onclick="Stop()">
+		
+		<input id="RIGHT" type="button" name="RIGHT" value="Right" onclick="Right()">
+		
+		<br>
+		
+		<input id="BACK" type="button" name="Backwards" value="Backwards" onclick="Back()">
+		
+		<br>
+		</fieldset>
+		
+	</body>
+</html>
